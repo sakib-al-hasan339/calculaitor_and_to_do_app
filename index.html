@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        body{
+            background-color: #333;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+
+
+
+#mainCalculaitor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.calculaitor{
+    width: 600px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 18px;    
+    overflow: hidden;
+}
+#calInput{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: bisque;
+    padding: 30px 20px;
+    text-align: right;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+
+}
+
+.calculaitor button{
+    padding: 20px;
+    background-color: #239BA7;
+    color: whitesmoke;
+    font-size: 21px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* newProjects TO DO APP*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    width: 500px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;}
+.col{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#addInput{
+    width: 300px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+#addButton{
+    padding: 12px 25px;
+    background-color:#239BA7 ;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#items{
+    list-style: none;
+   
+}
+#items li {
+    margin: 10px 0;
+    background-color: #239BA7;
+    font-size: 20px;
+    color: whitesmoke;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 13px 0px;
+    font-family: sans-serif;
+}
+
+#items li .nameMaintenDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#items li button{
+    background-color: tomato;border: none;padding: 10px;font: 17px;color: whitesmoke;border-radius: 8px;
+}
+
+.imageDiv{
+    padding: 17px;
+    background-color: rgb(98, 98, 191);
+    border-radius: 100%;
+    font-size: 17px;
+    
+}
+
+    </style>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+<div id="mainCalculaitor">
+    <div class="calculaitor">
+        <input id="calInput" type="text">
+
+        <div id="buttons">
+            <button onclick="clearFunction()">C</button>
+            <button onclick="deleteFunction()">DEL</button>
+            <button onclick="clickFunction('%')">%</button>
+            <button onclick="clickFunction('/')">/</button>
+            <button onclick="clickFunction('7')">7</button>
+            <button onclick="clickFunction('9')">9</button>
+            <button onclick="clickFunction('4')">4</button>
+            <button onclick="clickFunction('5')">5</button>
+            <button onclick="clickFunction('8')">8</button>
+            <button onclick="clickFunction('6')">6</button>
+            <button onclick="clickFunction('*')">*</'button>
+            <button onclick="clickFunction('-')">-</'button>
+            <button onclick="clickFunction('1')">1</button>
+            <button onclick="clickFunction('2')">2</button>
+            <button onclick="clickFunction('3')">3</button>
+            <button onclick="clickFunction('+')">+</button>
+            <button onclick="clickFunction('0')">0</button>
+            <button onclick="clickFunction('.')">.</'button>
+            <button onclick="calculateFunction()">=</button>
+        </div>
+    </div>
+
+
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<section>
+    <div class="container">
+        
+        <div class="row">
+            <h1 style="text-align: center;font-family: sans-serif;margin: 20px 0 25px 0 ;font-size: 30px;">TO DO APP </h1>
+            <div class="col">
+                <input id="addInput" placeholder="Enter Your Name" type="text">
+                <button id="addButton">ADD NOW</button>
+            </div>
+            <ul id="items">
+                <li class="FirstChild">
+                    sakib
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
