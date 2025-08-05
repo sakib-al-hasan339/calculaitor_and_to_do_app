@@ -83,6 +83,12 @@ createDiv.append(createnewDiv)
   itemsul.append(createLi)
 
 
+
+
+  createDeleteButton.addEventListener('click', function() {
+        createLi.remove(); 
+    });
+
   addInput.value = ''
 
 })
